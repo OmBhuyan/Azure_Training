@@ -1,0 +1,21 @@
+<!-- <h1>THE FILENAMES OF THE GIVEN FOLDER ARE:</h1>
+{% for value in form_data %}
+<h1> {{value}} </h1>
+{% endfor %} -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    {% for f in data %}
+    <ul>
+        <li style="display: block;">{{ f }}</li>
+    </ul>
+    {% endfor %}
+</body>
+
+</html>

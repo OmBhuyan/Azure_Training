@@ -1,0 +1,13 @@
+<div class="form" style="height: 100vh;width: 100vw;display:flex;
+justify-content: center;background-color: aqua;">
+    <form action="" method="post">
+        <input type="text" placeholder="Container to search in" name="container" value="{{
+        request.form.container }}"><br><br>
+        <input type="text" placeholder="Folder to search in" name="folder" value="{{
+            request.form.folder }}">
+        <input class="btn btn-default" type="submit" value="Enter">
+    </form>
+    {% if error %}
+    <p class="error" style="background-color: aqua;">Error: {{ error }}
+        {% endif %}
+</div>
